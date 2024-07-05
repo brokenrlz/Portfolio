@@ -1,0 +1,214 @@
+*{
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+html {
+    box-sizing: border-box;
+  
+    /* Here i have to use yours Set font size 
+    for easy rem calculations
+     
+    */
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+  }
+/*  colors  white #f0f0f0;
+            red   #be3144;
+            blacksoft  #303841  */
+body{
+font-family: 'Poppins', sans-serif;
+font-size: 1.8rem;
+font-weight: 400;
+line-height: 1.4;
+color: aliceblue;
+}
+img{
+    display: block;
+}
+
+#welcome-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #303841;
+    background-image: linear-gradient(62deg, #3a3d40 0%, #181719 100%);
+}
+#avatar{
+    width: 200px;
+    height: 200px;
+    position: absolute;
+    left: 8%;
+}
+h1{
+    font-family:"raleway", "sans-serif";
+    color: aliceblue;
+    font-size: 6rem;
+}
+p{
+    font-size: 2rem;
+    font-weight: 200;
+    font-style: italic;
+    color: #be3144;
+    margin-left: 10%;
+}
+.nav{
+    display: flex;
+    justify-content: flex-end;
+    position: fixed;
+    width: 100%;
+    background-color: #3366ff;
+    box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+    z-index: 1;
+}
+.nav-list{
+    display: flex;
+    margin-right: 2rem;
+    list-style: none;
+}
+.nav-list a{
+    display: block;
+    font-size: 2rem;
+    padding: 2rem;
+    text-decoration: none;
+    color:#f0f0f0;
+}
+img {
+    display: block;
+    width: 100%;
+  }
+#projects{
+    color: #181719;
+    background-color: cornflowerblue;
+}
+#contact, #skills{
+    background-color: #303841;
+}
+#skills{
+   
+        margin: 10px 0;
+        font-size: 1.8rem;
+}
+i {
+    margin-right: 10px;
+}
+
+/* Medias Queries*/
+@media (max-width: 575.98px) and (orientation: portrait) {
+    #avatar{
+        width: 50%;
+        height: 25%;
+        position: absolute;
+        top: 15%;
+        left: 25%;
+    }
+    h1{
+        position: absolute;
+        top: 45%;
+        left: 15%;
+        font-size: 4rem;
+    }
+   #welcome-section{
+    height: 100vh;
+   }
+  .welcome-p{
+    position: absolute;
+        top: 68%;
+    }
+   }
+   #skills{
+    margin: 0;
+    height: 100vh;
+    padding-top: 30%;
+    font-size: 3rem;
+    
+   }
+  #contact{
+    height: 100vh;
+    padding-top: 30%;
+    text-align: center;
+  }
+   .nav-list a{
+    font-size: 1.4rem;
+    margin-left: 15%;
+   }
+   .contenedor-skills{
+    margin-left: 17%;
+    margin-top: 18%;
+   }
+   h2{
+    margin-left: 15%;
+    color: aliceblue;
+    text-decoration: underline;
+
+   }
+   .p-footer{
+    font-size: 3rem;
+    font-weight: 800;
+    font-style: italic;
+    color: aliceblue;
+    text-decoration: underline;
+   }
+   .li-footer{
+    padding-top: 20%;
+   }
+
+@media only screen and (min-width: 768px) {
+    h1{
+        margin-left: 30%;
+    }
+    p{
+        margin-left: 38%;
+    }
+    #skills{
+        padding-top: 12%;
+        padding-left: 25%;
+    }
+    .icon-skills{
+        padding-top: 5%;
+    }
+    .contenedor-skills{
+        margin-top: 0;
+    }
+    #contact{
+        padding-top: 8%;
+    }
+    .li-footer{
+        padding: 5%;
+    }
+    .h2-footer{
+        margin-left: 2%;
+    }
+}
+@media (min-width: 992px) {
+    #avatar{
+        width: 30%;
+        height: 50%;
+    }
+    h1{
+        font-size: 9rem;
+    }
+    p{
+        font-size: 3rem;
+        padding-left: 2%;
+    }
+    .nav-list a {
+        font-size: 3rem;
+    }
+    #skills{
+        font-size: 5rem;
+        padding-top: 8%;
+    }
+    .icon-skills{
+        padding-top: 2%;
+    }
+    #contact{
+        font-size: 4rem;
+    }
+    .li-footer{
+        padding: 3%;
+    }
+}
